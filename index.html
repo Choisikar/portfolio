@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin HA - Web developer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">K.H</a>
+    <ul>
+      <li><a href="#nuages" class="square">Home</a></li>
+      <li><a href="#">A Propos</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+<!--     <img src="./assets/etoiles.png" alt="etoiles" id="etoiles"> -->
+    <img src="./assets/nuages.png" alt="nuages" id="nuages">
+    <img src="./assets/montagne.png" alt="montagne" id="montagne">
+    <h2 id="title1">Un</h2>
+    <h2 id="title2">Portfolio</h2>
+    <a href="#apropos" id="btn">Explore</a>
+    <img src="./assets/sol.png" alt="sol" id="sol">
+    <img src="./assets/bird1.png" alt="bird1" id="bird1">
+    <img src="./assets/bird2.png" alt="bird2" id="bird2">
+
+
+
+
+
+  </main>
+  <div class="content">
+    <h2 id="apropos">A propos</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim soluta excepturi natus facilis laborum numquam corporis voluptatum officiis! Eaque iure laborum excepturi fugit soluta, ab modi et, velit nesciunt explicabo vero consequuntur aliquam ratione dolores, dolorem ad! Odio, consequatur? Optio, excepturi ipsa suscipit reiciendis sunt, id modi, saepe qui quasi vero nulla dolor facilis totam illum fuga animi vel reprehenderit, quidem ullam accusantium! Porro, officiis temporibus ex veritatis laborum beatae, minus perspiciatis nam voluptas sint, voluptatibus reiciendis nemo nostrum dolorum quae assumenda molestias debitis aspernatur. Error voluptas corporis vero ex nesciunt quo ut doloribus consequatur sit officia ipsam sequi voluptatum et similique nemo cumque, perspiciatis aperiam quos quis exercitationem. Excepturi, neque adipisci, odit sit nisi dolorem ab, tempore magni qui animi at facilis. Alias at amet, debitis esse sunt, facere eum, exercitationem consequatur harum repudiandae placeat asperiores totam dolorem quaerat culpa laboriosam eaque. Sequi, eligendi. Iusto, repellat, fugiat at possimus nam aspernatur ipsam ex dolores expedita recusandae mollitia ullam reiciendis. Officia incidunt veniam dignissimos quis consectetur fuga praesentium velit, aspernatur, culpa dolor, repudiandae dolorem. Consequatur a eum illo placeat nostrum aspernatur hic maxime incidunt accusamus, est aliquam suscipit fugiat unde cupiditate enim sequi animi molestias quod dignissimos aliquid harum tenetur neque, consequuntur. Necessitatibus consequuntur, optio odio aspernatur, voluptatibus impedit quis, dolores natus cum ut placeat commodi. Aut quidem, voluptate, inventore at quos perferendis sunt perspiciatis rerum ullam quasi in consectetur enim, qui, necessitatibus? Excepturi blanditiis voluptatibus dolores tempore. Omnis expedita blanditiis placeat labore consequatur quae inventore. Odio natus quibusdam repellendus praesentium officiis sapiente fugit nam, id placeat, eum at rerum labore, expedita magni assumenda earum quis iure exercitationem doloribus nisi voluptates! Assumenda ipsa aliquam dignissimos soluta obcaecati accusamus minus tempore, accusantium magni quidem commodi cumque architecto recusandae!<br><br><br>
+    Non ratione voluptas soluta necessitatibus repellendus, aliquam reprehenderit doloremque id ex maxime officia incidunt, temporibus totam modi quibusdam quo quidem, porro nostrum exercitationem consequatur officiis voluptates sint impedit! Facilis, molestias! Ea consequatur, minima perferendis expedita, sequi recusandae veritatis amet id fuga commodi obcaecati repellendus eius dolores harum, porro quasi, eaque sed. Quisquam, voluptatem similique sed voluptatibus mollitia voluptatum ipsam esse fugiat necessitatibus omnis quis porro ex magni, aliquid officia iusto nemo dolorem, iste nesciunt, quam harum labore temporibus cum neque? Accusamus, corporis, quod. Eaque doloribus nostrum libero cupiditate vero eveniet temporibus, maxime, sint! Unde iste ad voluptate natus temporibus iure numquam architecto in odit quisquam, tempore eaque esse est tenetur sequi maiores culpa nostrum rem earum totam repellendus velit. Itaque porro eum excepturi quam hic, voluptatibus fugiat provident, numquam illum ex velit, assumenda similique architecto dicta voluptates ipsa deserunt. Fuga beatae, explicabo dicta hic veritatis, assumenda natus inventore, consequatur atque blanditiis qui doloribus minima harum sed reprehenderit laudantium sunt, est voluptas modi cupiditate provident fugit possimus nulla. Molestiae quo quas quibusdam ea aliquam enim accusantium dignissimos, ratione, incidunt minus quisquam. Atque est dolorum harum aliquid sit eligendi amet molestiae iure nam culpa ullam voluptatem earum, beatae a ad esse veritatis ex itaque eum minus consectetur. Similique, quo ratione esse vel sit doloribus!</p>
+  </div>
+
+<script type="text/javascript">
+  var nuages = document.getElementById('nuages');
+  var montagne = document.getElementById('montagne');
+  var sol = document.getElementById('sol');
+  var title1 = document.getElementById('title1');
+  var title2 = document.getElementById('title2');
+  var bird1 = document.getElementById('bird1');
+  var bird2 = document.getElementById('bird2');
+  var btn = document.getElementById('btn');
+
+  window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+    nuages.style.top = value * 1.5 + 'px';
+    montagne.style.top = value * 0.75 + 'px';
+    // sol.style.top = value * 0 + 'px';
+    title1.style.marginLeft = value * 1.5 + 'px';
+    title2.style.marginLeft = value * -2 + 'px';
+    // title.style.marginRight = value * 4 + 'px';
+    // title.style.marginBottom = value * 0 + 'px';
+    bird1.style.marginLeft = value * 1 + 'px';
+    bird1.style.marginTop = value * -0.5 + 'px';
+    bird2.style.left = value * -1.5 + 'px';
+    bird2.style.marginTop = value * -0.5 + 'px';
+    btn.style.marginBottom = value * -2.5 +'px';
+    })
+
+</script>
+</body>
+</html>
